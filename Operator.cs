@@ -42,7 +42,6 @@ namespace Dron
                 char key = Console.ReadKey().KeyChar;
                 Console.WriteLine();
                 pilot.Ruch(key);
-                //TODO sprawdzenie czy nie wyledział poza zasięg
             }
         }
 

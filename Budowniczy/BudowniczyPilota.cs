@@ -10,6 +10,7 @@ namespace Dron.Budowniczy
         public override void SkonfigurujPilot()
         {
             this.pilot.Dron = this.dron;
+            this.pilot.Status = new StatusProxy(this.pilot.Dron);
         }
 
         public override void ZamontujPrzyciski()
@@ -19,6 +20,7 @@ namespace Dron.Budowniczy
             pilot[Przycisk.A] = 'a';
             pilot[Przycisk.D] = 'd';
             pilot[Przycisk.P] = 'p';
+            pilot[Przycisk.Z] = 'z';
         }
 
         public override Pilot DajGotowyPilot()

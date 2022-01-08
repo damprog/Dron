@@ -30,23 +30,12 @@ namespace Dron
             else if (key == 'a') pozycja[1] -= predkosc;
             else if (key == 'd') pozycja[1] += predkosc;
             else if (key == 'p') Operator.AutoPowrotDrona(); //odwołuje się do statycznej klasy
+            else if (key == 'z') Operator.KoniecLotu();
             Console.WriteLine("\n\nDron porusza się");
             bateria -= 1;
             odleglosc = Math.Sqrt(Math.Pow(pozycja[0], 2) + Math.Pow(pozycja[1], 2));
         }
-        public void PokazStatystyki()
-        {
-            if (!czyUszkodzony)
-            {
-                Console.WriteLine($"Stan baterii: {bateria}");
-                Console.WriteLine($"Odległość od operatora: {odleglosc} metrów");
-                Console.WriteLine($"Pozycja drona: {DajPozycje()[0]}, {DajPozycje()[1]}");
-            }
-            else
-            {
-                Console.WriteLine("Stan: Uszkodzony");
-            }
-        }
+        
         public void Uderzenie()
         {
             czyUszkodzony = true;

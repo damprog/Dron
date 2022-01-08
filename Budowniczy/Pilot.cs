@@ -7,6 +7,8 @@ namespace Dron
     class Pilot
     {
         IDron dron { get; set; }
+        StatusProxy status { get; set; }
+        public StatusProxy Status { get { return status; } set { status = value; } }
         public IDron Dron { get { return dron; } set { dron = value; } }
 
         double[] pozycja = new double[2];
@@ -30,7 +32,7 @@ namespace Dron
             if (przyciski.ContainsValue(k[0]))
             {
                 dron.Ruch(key);
-                dron.PokazStatystyki();
+                status.PokazStatystyki();
                 SprawdzZasieg();
             }
             else
@@ -47,7 +49,7 @@ namespace Dron
                 Console.WriteLine("Jestem poza zasięgiem");
                 Console.WriteLine("...");
                 dron.Uderzenie();
-                dron.PokazStatystyki();
+                status.PokazStatystyki();
                 Operator.KoniecLotu();
             }
         }
@@ -64,12 +66,12 @@ namespace Dron
                 Console.WriteLine("Dron powrócił do operatora");
                 dron.DajPozycje()[0] = 0;
                 dron.DajPozycje()[1] = 0;
-                dron.PokazStatystyki();
+                status.PokazStatystyki();
             }
         }
         public void PokazStatystykiDrona()
         {
-            dron.PokazStatystyki();
+            status.PokazStatystyki();
         }
     }
     public enum Przycisk
@@ -78,6 +80,7 @@ namespace Dron
         S,
         A,
         D,
-        P
+        P,
+        Z
     }
 }

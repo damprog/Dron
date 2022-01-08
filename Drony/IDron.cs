@@ -20,6 +20,5 @@ namespace Dron
         void Ruch(char key);
         void Uderzenie();
         void PokazInformacje();
-        void PokazStatystyki();
 }
 }
