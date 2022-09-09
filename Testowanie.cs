@@ -8,6 +8,7 @@ namespace Dron
     {
         public void Test()
         {
+            //Here is the new line of comment
             Console.WriteLine("Na potrzeby gita");
         }
     }
