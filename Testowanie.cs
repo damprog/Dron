@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Dron
 {
@@ -17,8 +15,10 @@ namespace Dron
             //Teraz komentarz bez wyychania na remote test
             //Kolejny komentarz bez wypychania na repote test
 
-//komentarz z innego punktu na commicie
-//Chce wykonać innego merge
+            //komentarz z innego punktu na commicie
+            //Chce wykonać innego merge
+
+            //Sam commit z test
         }
     }
 }
