@@ -10,11 +10,17 @@ namespace Dron
         {
             //Here is the new line of comment
             Console.WriteLine("Na potrzeby gita");
-<<<<<<< HEAD
             //This is comment from master branch
-=======
             //Now i am on test branch
->>>>>>> test
+            //Kolejne zmiany na gałęzi test
+            //Już powoli rozumiem jak to działa - z gałezi test
+<<<<<<< Updated upstream
+            //Teraz komentarz bez wyychania na remote test
+            //Kolejny komentarz bez wypychania na repote test
+=======
+
+//komentarz z innego punktu na commicie
+>>>>>>> Stashed changes
         }
     }
 }
