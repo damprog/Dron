@@ -18,6 +18,7 @@ namespace Dron
             //Kolejny komentarz bez wypychania na repote test
 
 //komentarz z innego punktu na commicie
+//Chce wykonać innego merge
         }
     }
 }
