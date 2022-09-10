@@ -13,6 +13,7 @@ namespace Dron
             //This is comment from master branch
             //Now i am on test branch
             //Kolejne zmiany na gałęzi test
+            //Już powoli rozumiem jak to działa - z gałezi test
         }
     }
 }
