@@ -14,6 +14,7 @@ namespace Dron
             //Now i am on test branch
             //Kolejne zmiany na gałęzi test
             //Już powoli rozumiem jak to działa - z gałezi test
+            //Teraz komentarz bez wyychania na remote test
         }
     }
 }
