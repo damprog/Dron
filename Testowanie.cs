@@ -12,6 +12,7 @@ namespace Dron
             Console.WriteLine("Na potrzeby gita");
             //This is comment from master branch
             //Now i am on test branch
+            //Kolejne zmiany na gałęzi test
         }
     }
 }
