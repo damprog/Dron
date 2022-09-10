@@ -16,6 +16,8 @@ namespace Dron
             //Już powoli rozumiem jak to działa - z gałezi test
             //Teraz komentarz bez wyychania na remote test
             //Kolejny komentarz bez wypychania na repote test
+
+//komentarz z innego punktu na commicie
         }
     }
 }
