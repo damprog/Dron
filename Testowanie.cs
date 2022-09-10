@@ -10,6 +10,7 @@ namespace Dron
         {
             //Here is the new line of comment
             Console.WriteLine("Na potrzeby gita");
+            //Now i am on test branch
         }
     }
 }
